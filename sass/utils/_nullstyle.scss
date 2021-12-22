@@ -1,0 +1,28 @@
+button {
+  border: 0;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+ul,
+p,
+a {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+img,
+form {
+  display: block;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--mainColor);
+}
+.team-social__icon,
+.regular__icon {
+  fill: #afb1b8;
+}
