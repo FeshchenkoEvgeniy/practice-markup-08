@@ -1,41 +1,54 @@
-.regular {
+.clients {
   display: flex;
-}
-.regular__title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-.regular__item:not(:last-child) {
-  margin-right: 30px;
+  
+  @media screen and (max-width: 1199.5px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.regular__link {
-  width: 170px;
+.clients__item{
+  width: calc(100% / 2 - 30px);
   height: 92px;
-  border: 1px solid #afb1b8;
+
+  @media screen and (max-width: 1199.5px) {
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $tablet){
+    width: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: $desktop){
+    width: 170px;
+  }
+
+
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop){
+      margin-right: 30px;
+    }
+  }
+}
+
+.clients__link {
+  @include flex-center();
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  border: 1px solid var(--iconColor);
+  color: var(--iconColor);
+  transition: border-color var(--mainTransitionTime) var(--mainTransition), 
+  color var(--mainTransitionTime) var(--mainTransition);
 
   &:focus,
   &:hover {
-    color: var(--blueColor);
-    border-color: var(--blueColor);
+    color: var(--brandColor);
+    border-color: var(--brandColor);
   }
 }
-.regular__icon {
-  width: 106px;
-  height: 60px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.regular__link:hover .regular__icon,
-.regular__link:focus .regular__icon {
-  fill: var(--blueColor);
+
+.clients__icon {
+  fill: currentColor;
 }

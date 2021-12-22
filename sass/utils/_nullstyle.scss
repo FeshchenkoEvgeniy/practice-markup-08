@@ -2,27 +2,41 @@ button {
   border: 0;
   cursor: pointer;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 h1,
 h2,
 h3,
-ul,
-p,
-a {
-  padding: 0;
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  font-size: inherit;
-  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
   text-decoration: none;
 }
-img,
-form {
-  display: block;
+
+html {
+  max-width: 100%;
 }
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--mainColor);
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: Roboto, sans-serif;
+  color: var(--firstFontColor);
+  background-color: var(--nullBg);
 }
-.team-social__icon,
-.regular__icon {
-  fill: #afb1b8;
+
+body.modal-open {
+  overflow: hidden;
 }

@@ -1,19 +1,51 @@
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  &--no-padding {
-    padding-top: 0px;
-  }
-  &--dark-bg {
-    background-color: #f5f4fa;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
+
+.section--no-padding {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+  padding-top: 0;
+  display: block;
+  }
+}
+
+.section--dark-bg {
+  background-color: var(--sectionBg);
+}
+
+.section__filter {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
 .section__title {
+  font-size: 28px;
+  line-height: 1.18;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  letter-spacing: var(--mainLetterSpacing);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.166;
+  }
+}
+
+.section__title--bottom-indent {
   text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }

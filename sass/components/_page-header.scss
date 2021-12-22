@@ -1,13 +1,18 @@
 .page-header {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
   border-bottom: 1px solid #ececec;
 }
-.page-header__flex,
-.menu {
-  display: flex;
+
+.page-header__container {
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.menu__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+.page-header__contacts {
+  margin-left: auto;
 }
