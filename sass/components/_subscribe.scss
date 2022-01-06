@@ -1,0 +1,49 @@
+.subscribe {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.subscribe__input {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: var(--whiteColor);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--mainBg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: border-color var(--mainTransitionTime) var(--mainTransition);
+
+  @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1199.5px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 12px;
+    width: 358px;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: var(--MainLS);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border-color: var(--blueColor);
+    outline: none;
+  }
+}
+
+.subscribe__btn {
+  @media screen and (max-width: $desktop) {
+    margin: 0 auto;
+  }
+}
