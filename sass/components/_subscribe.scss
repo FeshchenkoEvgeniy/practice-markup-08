@@ -1,5 +1,4 @@
 .subscribe {
-
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -10,7 +9,7 @@
   height: 50px;
   padding: 0 16px;
   font-size: 16px;
-  color: var(--lightFontColor);
+  color: var(--whiteColor);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--mainBg);
@@ -33,18 +32,17 @@
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: var(--mainLetterSpacing);
+    letter-spacing: var(--MainLS);
     color: rgba(255, 255, 255, 0.6);
   }
-  
+
   &:focus {
-    border-color: var(--brandColor);
+    border-color: var(--blueColor);
     outline: none;
   }
 }
 
 .subscribe__btn {
-
   @media screen and (max-width: $desktop) {
     margin: 0 auto;
   }

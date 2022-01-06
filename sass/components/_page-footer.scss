@@ -5,7 +5,6 @@
 }
 
 .page-footer__container {
-
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
@@ -18,7 +17,6 @@
 }
 
 .page-footer__box {
-
   @media screen and (max-width: 767.5px) {
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +25,7 @@
   @media screen and (max-width: 1199.5px) {
     text-align: center;
   }
-  
+
   &:first-child {
     @media screen and (max-width: 767.5px) {
       margin-bottom: 60px;
@@ -40,7 +38,6 @@
   }
 
   &:nth-child(2) {
-
     @media screen and (max-width: 767.5px) {
       margin-bottom: 60px;
     }
@@ -51,7 +48,6 @@
   }
 
   &:nth-child(3) {
-
     @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
       margin-top: 60px;
       flex-grow: 2;
@@ -67,9 +63,9 @@
 .page-footer__text {
   line-height: 1.14;
   font-weight: 700;
-  letter-spacing: var(--mainLetterSpacing);
+  letter-spacing: var(--MainLS);
   text-transform: uppercase;
-  color: var(--lightFontColor);
+  color: var(--whiteColor);
   margin-bottom: 20px;
 }
 
@@ -79,11 +75,10 @@
 
 .address__list {
   line-height: 1.71;
-  letter-spacing: var(--mainLetterSpacing);
+  letter-spacing: var(--MainLS);
 }
 
 .address__item {
-
   &:not(:last-child) {
     margin-bottom: 8px;
 
@@ -99,11 +94,10 @@
 
   &:focus,
   &:hover {
-    color: var(--brandColor);
+    color: var(--blueColor);
   }
 }
 
 .address__map {
-  color: var(--lightFontColor);
+  color: var(--whiteColor);
 }
-

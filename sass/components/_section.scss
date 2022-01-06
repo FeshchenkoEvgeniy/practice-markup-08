@@ -12,8 +12,8 @@
   display: none;
 
   @media screen and (min-width: $desktop) {
-  padding-top: 0;
-  display: block;
+    padding-top: 0;
+    display: block;
   }
 }
 
@@ -33,7 +33,7 @@
   font-size: 28px;
   line-height: 1.18;
   font-weight: 700;
-  letter-spacing: var(--mainLetterSpacing);
+  letter-spacing: var(--MainLS);
 
   @media screen and (min-width: $desktop) {
     font-size: 36px;

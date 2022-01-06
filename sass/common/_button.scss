@@ -6,10 +6,10 @@
   letter-spacing: 0.06em;
   height: 50px;
   border-radius: 4px;
-  background-color: var(--brandColor);
-  color: var(--lightFontColor);
-  transition: background-color var(--mainTransitionTime) var(--mainTransition), box-shadow var(--mainTransitionTime) var(--mainTransition);
-
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+  transition: background-color var(--mainTransitionTime) var(--mainTransition),
+    box-shadow var(--mainTransitionTime) var(--mainTransition);
 
   @media screen and (min-width: 320px) {
     width: 200px;

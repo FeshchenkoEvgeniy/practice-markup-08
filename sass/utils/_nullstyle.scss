@@ -33,8 +33,8 @@ body {
   font-size: 14px;
   line-height: 1.2;
   font-family: Roboto, sans-serif;
-  color: var(--firstFontColor);
-  background-color: var(--nullBg);
+  color: var(--mainFirstColor);
+  background-color: var(--whiteColor);
 }
 
 body.modal-open {

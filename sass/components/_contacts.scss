@@ -11,9 +11,7 @@
 }
 
 .contacts__item {
-
   &:not(:last-child) {
-
     @media screen and (min-width: $tablet) and (max-width: 1199.5px) {
       margin-bottom: 10px;
     }
@@ -27,7 +25,7 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  color: var(--secondFontColor);
+  color: var(--mainSecondColor);
   transition: color var(--mainTransitionTime) var(--mainTransition);
 
   @media screen and (min-width: $tablet) {
@@ -44,7 +42,7 @@
 
   &:focus,
   &:hover {
-    color: var(--brandColor);
+    color: var(--blueColor);
   }
 }
 

@@ -3,9 +3,9 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.167;
-  letter-spacing: var(--mainLetterSpacing);
+  letter-spacing: var(--MainLS);
   text-decoration: none;
-  color: var(--brandColor);
+  color: var(--blueColor);
 
   @media screen and (min-width: $desktop) {
     font-size: 26px;
@@ -14,9 +14,9 @@
 }
 
 .logo__text {
-  color:var(--firstFontColor);
-  
+  color: var(--mainFirstColor);
+
   &--light {
-    color: var(--lightFontColor);
+    color: var(--whiteColor);
   }
 }

@@ -1,14 +1,13 @@
 :root {
-  --brandColor: #2196F3;
-  --brandHover: #188CE8;
-  --firstFontColor: #212121;
-  --secondFontColor: #757575;
-  --lightFontColor: #ffffff;
-  --mainBg: #2F303A;
-  --sectionBg: #F5F4FA;
-  --nullBg: #ffffff;
-  --iconColor: #AFB1B8;
-  --mainLetterSpacing: 0.03em;
+  --blueColor: #2196f3;
+  --brandHover: #188ce8;
+  --mainFirstColor: #212121;
+  --mainSecondColor: #757575;
+  --mainBg: #2f303a;
+  --sectionBg: #f5f4fa;
+  --whiteColor: #ffffff;
+  --iconColor: #afb1b8;
+  --MainLS: 0.03em;
   --mainTransition: cubic-bezier(0.4, 0, 0.2, 1);
   --mainTransitionTime: 250ms;
 }
